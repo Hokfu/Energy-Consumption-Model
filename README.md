@@ -8,8 +8,8 @@ or wget link [https://raw.githubusercontent.com/Hokfu/Energy-Consumption-Model/m
 <br>
 <br>
 # Problem Description
-A steel company has a few challenges apart from market competition like Increased energy Costs, downtime, inefficient resource allocation, maintenance, and regulatory compliance <br>
-Problem: If the company does not know which conditions lead to high energy consumption and which ones lead to low and medium energy loads, those challenges will become serious problems. <br>
+A steel company has a few challenges apart from market competition like Increased energy Costs, downtime, inefficient resource allocation, maintenance, and regulatory compliance <br><br>
+Problem: If the company does not know which conditions lead to high energy consumption and which ones lead to low and medium energy loads, those challenges will become serious problems. <br><br>
 Opportunity: Vice versa, if the company can predict the energy consumption of a process in advance, it can improve in the challenges above, and can gain market advantage.
 <br>
 <br>
@@ -26,10 +26,10 @@ Random Forest
 For notebook and model training(train.py) <br>
 Use conda or any environment. For conda environment, <br>
 $conda create -n 'environment-name' python=3.9.18<br>
-e.g. $conda create -n ml-zoomcamp python=3.9.18<br>
+e.g. $conda create -n ml-zoomcamp python=3.9.18<br><br>
 Activate conda environment<br>
 $conda activate 'environment-name'<br>
-e.g. $conda activate ml-zoomcamp<br>
+e.g. $conda activate ml-zoomcamp<br><br>
 Please check [requirements.txt](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/requirements.txt) for the required versions.<br>
 Use $pip install -r requirements.txt to install requirements. 
 <br>
@@ -37,7 +37,7 @@ Use $pip install -r requirements.txt to install requirements.
 For model prediction<br>
 Use pipenv<br>
 $pipenv install numpy scikit-learn==1.3.0 gunicorn flask
-<br>
+<br><br>
 No need to install this for testing containerization. For containerization, check below.
 <br>
 <br>
@@ -47,12 +47,13 @@ For container building
 <br>
 $Docker build -t 'container_name' .<br>
 e.g. $Docker build -t energy-consumption .
-<br>
+<br><br>
 For container running
 <br>
 $Docker run -it --rm -p 9696:9696 'container_name'<br>
-e.g. $Docker run -it --rm -p 9696:9696 energy-consumption<br>
+e.g. $Docker run -it --rm -p 9696:9696 energy-consumption<br><br>
 Then, use another terminal and run predict_test.py to check the model.
+
 
 
 
