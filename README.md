@@ -24,7 +24,15 @@ Random Forest
 <br>
 # Dependency and Environment Management
 For notebook and model training(train.py) <br>
-Please check [requirements.txt](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/requirements.txt) for the required versions.
+Use conda or any environment. For conda environment, <br>
+$conda create -n 'environment-name' python=3.9.18<br>
+e.g. $conda create -n ml-zoomcamp python=3.9.18<br>
+Activate conda environment<br>
+$conda activate 'environment-name'<br>
+e.g. $conda activate ml-zoomcamp<br>
+Please check [requirements.txt](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/requirements.txt) for the required versions.<br>
+Use $pip install -r requirements.txt to install requirements. 
+<br>
 <br>
 For model prediction<br>
 Use pipenv<br>
