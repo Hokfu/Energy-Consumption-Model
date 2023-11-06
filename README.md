@@ -1,6 +1,17 @@
 # Energy-Consumption-Model
 Classification model of the energy consumption with the data collected from a smart small-scale steel industry in South Korea.<br> 
 I took the data from UCI Machine Learning Repository.<br>
+
+# Methodology
+
+In this work, we used the dataset from the following research paper<br>
+[@misc{misc_steel_industry_energy_consumption_851,
+  author       = {V E,Sathishkumar, Shin,Changsun, and Cho,Yongyun},
+  title        = {{Steel Industry Energy Consumption}},
+  year         = {2023},
+  howpublished = {UCI Machine Learning Repository},
+  note         = {{DOI}: https://doi.org/10.24432/C52G8C}
+}](https://archive.ics.uci.edu/dataset/851/steel+industry+energy+consumption)<br><br>
 The dataset is provided in the current repository. Here is the link [Steel_industry_data.csv](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/Steel_industry_data.csv)
 <br>
 or wget 'https://raw.githubusercontent.com/Hokfu/Energy-Consumption-Model/main/Steel_industry_data.csv'
