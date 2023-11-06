@@ -3,7 +3,7 @@ Classification model of the energy consumption with the data collected from a sm
 I took the data from UCI Machine Learning Repository.<br>
 The dataset is provided in the current repository. Here is the link [Steel_industry_data.csv](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/Steel_industry_data.csv)
 <br>
-or wget link [https://raw.githubusercontent.com/Hokfu/Energy-Consumption-Model/main/Steel_industry_data.csv]
+or wget 'https://raw.githubusercontent.com/Hokfu/Energy-Consumption-Model/main/Steel_industry_data.csv'
 <br>
 <br>
 # Problem Description
