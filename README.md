@@ -29,33 +29,44 @@ Random Forest
 # Dependency and Environment Management
 For notebook and model training(train.py) <br>
 Use conda or any environment. For conda environment, <br>
-$conda create -n 'environment-name' python=3.9.18<br>
-e.g. $conda create -n ml-zoomcamp python=3.9.18<br><br>
+```
+$conda create -n 'environment-name' python=3.9.18
+```
+<br>
 Activate conda environment<br>
-$conda activate 'environment-name'<br>
-e.g. $conda activate ml-zoomcamp<br><br>
+
+```
+$conda activate 'environment-name'
+```
+<br>
 Please check [requirements.txt](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/requirements.txt) for the required versions.<br>
-Use $pip install -r requirements.txt to install requirements. 
+
+Use   ```$pip install -r requirements.txt```  to install requirements. 
 <br>
 <br>
 For model prediction<br>
 Use pipenv<br>
+
+```
 $pipenv install numpy scikit-learn==1.3.0 gunicorn flask
-<br><br>
-No need to install this for testing containerization. For containerization, check below.
-<br>
-<br>
+```
+
 # Containerization
 <br>
 For container building 
 <br>
-$Docker build -t 'container_name' .<br>
-e.g. $Docker build -t energy-consumption .
-<br><br>
+
+``` 
+$Docker build -t 'container_name' .
+```
+<br>
 For container running
 <br>
-$Docker run -it --rm -p 9696:9696 'container_name'<br>
-e.g. $Docker run -it --rm -p 9696:9696 energy-consumption<br><br>
+
+```
+$Docker run -it --rm -p 9696:9696 'container_name'
+```
+<br>
 Then, use another terminal and run predict_test.py to check the model.
 
 
