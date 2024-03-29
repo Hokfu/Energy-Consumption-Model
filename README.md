@@ -8,8 +8,9 @@ In this work, we used the dataset from the following research paper<br>
 [@sathishkumar2023steel](https://doi.org/10.24432/C52G8C)<br><br>
 The dataset is provided in the current repository. Here is the link [Steel_industry_data.csv](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/Steel_industry_data.csv)
 <br>
+
 ```
-!wget 'https://raw.githubusercontent.com/Hokfu/Energy-Consumption-Model/main/Steel_industry_data.csv'
+wget 'https://raw.githubusercontent.com/Hokfu/Energy-Consumption-Model/main/Steel_industry_data.csv'
 ```
 
 # Problem Description
@@ -22,7 +23,8 @@ Opportunity: Vice versa, if the company can predict the energy consumption of a 
 Firstly, I tried to find the relation between numerical features and the target we want to know which is energy load type.
 ![relationship between numerical features and target variable](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/relationship%20between%20%20numerical%20features%20and%20target.png)
 <br>
-We can see that NSM impacts  the most to the load type by checking relations in above violin plot. 
+We can see clearly that NSM impacts  the most to the load type by checking relations in above violin plot. 
+Violin plot or box plot can be used to find out the distribution of numerical features. In this case, I checked the distribution of each numerical features relating to each load type. 
 <br>
 <br>
 <br>
@@ -48,20 +50,20 @@ For notebook and model training(train.py) <br>
 Use conda or any environment. For conda environment, <br>
 
 ```
-$conda create -n 'environment-name' python=3.9.18
+conda create -n 'environment-name' python=3.9.18
 ```
 
 <br>
 Activate conda environment<br>
 
 ```
-$conda activate 'environment-name'
+conda activate 'environment-name'
 ```
 
 <br>
 
 ```
-$pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 to install requirements. 
@@ -71,7 +73,7 @@ For model prediction<br>
 Use pipenv<br>
 
 ```
-$pipenv install numpy scikit-learn==1.3.0 gunicorn flask
+pipenv install numpy scikit-learn==1.3.0 gunicorn flask
 ```
 
 # Containerization
@@ -80,14 +82,14 @@ For container building
 <br>
 
 ``` 
-$Docker build -t 'container_name' .
+Docker build -t 'container_name' .
 ```
 <br>
 For container running
 <br>
 
 ```
-$Docker run -it --rm -p 9696:9696 'container_name'
+Docker run -it --rm -p 9696:9696 'container_name'
 ```
 <br>
 Then, use another terminal and run predict_test.py to check the model.
