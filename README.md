@@ -1,4 +1,14 @@
-# Energy-Consumption-Model
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Methodology](#methodology)
+3. [Problem Description](#problem-description)
+4. [EDA](#eda)
+5. [Model Training](#model-training)
+6. [Parameter Tuning](#parameter-tuning)
+7. [Dependency and Environment Management](#dependency-and-environment-management)
+8. [Containerization](#containerization)
+
+# Introduction
 Classification model of the energy consumption with the data collected from a smart small-scale steel industry in South Korea.<br> 
 I took the data from UCI Machine Learning Repository.<br>
 
@@ -38,7 +48,7 @@ I trained with two models - logistic regression and random forest. Overall, rand
 <br>
 
 # Parameter Tuning
-Maximum depth and minimum sample leaves are tuned to find the best values.
+Maximum depth and minimum sample leaves are tuned in a loop to find the best values.
 <br>
 ![max depth tuning](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/finding%20best%20maximum%20depth.png)
 ![min sample leaves tuning](https://github.com/Hokfu/Energy-Consumption-Model/blob/main/finding%20best%20min%20sample%20leaves.png)
