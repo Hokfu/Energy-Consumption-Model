@@ -103,6 +103,11 @@ Docker run -it --rm -p 9696:9696 'container_name'
 ```
 <br>
 Then, use another terminal and run predict_test.py to check the model.
+<br>
+
+# Deployment
+
+In [Render](https://render.com/), create account, create a new web service, and deploy the container.
 
 
 
