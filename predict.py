@@ -2,6 +2,7 @@ import pickle
 from flask import Flask
 from flask import request
 from flask import jsonify
+from flask_cors import CORS
 
 model_file = "model_1.bin"
 
