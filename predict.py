@@ -9,6 +9,7 @@ with open(model_file,"rb") as f_in:
     dv,model = pickle.load(f_in)
 
 app = Flask("energy_consumption")
+CORS(app)
 @app.route("/predict",methods=['POST'])
 
 def predict():
