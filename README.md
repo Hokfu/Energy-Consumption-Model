@@ -92,14 +92,14 @@ For container building
 <br>
 
 ``` 
-Docker build -t 'container_name' .
+docker build -t <container_name> .
 ```
 <br>
 For container running
 <br>
 
 ```
-Docker run -it --rm -p 9696:9696 'container_name'
+docker run -it --rm -p 9696:9696 <container_name>
 ```
 <br>
 Then, use another terminal and run predict_test.py to check the model.
